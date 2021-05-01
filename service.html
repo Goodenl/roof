@@ -36,7 +36,7 @@
   			
   			<button class="menu__btn">
   				<p class="menu__text">Меню</p>
-  				<svg class="logo__img" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+  				<svg class="menu__img" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
   					<rect x="18.2129" y="18.2131" width="12" height="12" fill="white"/>
   					<rect x="18.2129" y="0.213135" width="12" height="12" fill="white"/>
   					<rect x="0.212891" y="0.213135" width="12" height="12" fill="white"/>
@@ -133,9 +133,19 @@
 		 								<span class="checkmark">Другое</span>
 		 							</label>
 		 						</div>
+		 	
+		 						<div class="label-box label-box--mob">
+		 							<label>
+		 								<select name="type-work">
+		 									<option value="repair" selected>Ремонт</option>
+		 									<option value="installation">Монтаж</option>
+		 									<option value="other">Другое</option>
+		 								</select>
+		 							</label>
+		 						</div>
 		 					</div>
 		 	
-		 					<div class="type-roof-box">
+		 					<div class="type-object-box">
 		 						<h3>Вид объекта:</h3>
 		 						
 		 						<div class="label-box">
@@ -159,6 +169,17 @@
 		 								<span class="checkmark">Другое</span>
 		 							</label>
 		 						</div>
+		 	
+		 						<div class="label-box label-box--mob">
+		 								<label>
+		 									<select name="type-object-box">
+		 										<option value="life" selected>Жилой дом</option>
+		 										<option value="production">Производственное здание</option>
+		 										<option value="no-life">Нежилое здание</option>
+		 										<option value="other">Другое</option>
+		 									</select>
+		 								</label>
+		 							</div>
 		 					</div>
 		 	
 		 					<h3>Контактная информация:</h3>
@@ -282,6 +303,10 @@
             </li>
           </ul>
         </nav>
+      
+        <div class="sidebar__tel-mob">
+          <a href="tel:+74952053400">+7 (495) 205-34-00</a>
+        </div>
       </section>		</main>
 
     <!-- Footer -->
