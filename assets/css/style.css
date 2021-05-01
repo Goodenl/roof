@@ -2092,7 +2092,7 @@ h3 {
     }
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
     .container {
         max-width: 315px;
     }
