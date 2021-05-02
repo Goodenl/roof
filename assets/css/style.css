@@ -677,11 +677,14 @@ h3 {
 .sidebar-show .menu__btn svg {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+.sidebar-show .menu__btn svg rect {
     fill: #000000;
 }
 
 @media screen and (max-width: 768px) {
-    .sidebar-show .menu__btn svg {
+    .sidebar-show .menu__btn svg rect {
         fill: #ffffff;
     }
 }
@@ -1274,6 +1277,18 @@ h3 {
     color: #000000;
     opacity: 0;
     transition: left .2s ease, opacity .2s ease;
+}
+
+@media only screen and (max-height: 375px) {
+    .sidebar-main {
+        padding: 9rem 6rem 15rem;
+    }
+
+    .sidebar-main h2 {
+        font-size: 3rem !important;
+        line-height: 1;
+        color: #ffffff;
+    }
 }
 
 @media screen and (max-width: 768px) {
