@@ -707,8 +707,10 @@ h3 {
   @media screen and (max-width: 768px) {
     .calculate-main {
       padding: 7rem 0 11rem; } }
-  .calculate-main .btn:hover {
-    border: 1px #FC420A solid; }
+  .calculate-main .btn {
+    border: 1px solid transparent; }
+    .calculate-main .btn:hover {
+      border-color: #FC420A; }
 
 .calculate__wrapper {
   max-width: 660px; }
@@ -777,6 +779,8 @@ h3 {
   padding: 5rem;
   margin-right: 3rem;
   border: 1px solid #000000; }
+  .blog-main__item.hide {
+    display: none; }
   @media screen and (max-width: 768px) {
     .blog-main__item {
       height: auto;
@@ -1012,7 +1016,10 @@ h3 {
       min-width: 40rem;
       line-height: normal; }
   .calculate-service .btn {
-    margin-top: .4rem !important; }
+    margin-top: .4rem !important;
+    border: 1px solid transparent; }
+    .calculate-service .btn:hover {
+      border-color: #FC420A; }
     .calculate-service .btn p {
       width: 18.8rem !important; }
       @media screen and (max-width: 991px) {
@@ -1797,9 +1804,10 @@ input[type="checkbox"]:checked ~ .checkmark {
     .footer__contacts {
       margin-left: 0; } }
   .footer__contacts .btn {
-    margin-top: 5rem; }
+    margin-top: 5rem;
+    border: 1px solid transparent; }
     .footer__contacts .btn:hover {
-      border: 1px solid #FC420A; }
+      border-color: #FC420A; }
     @media screen and (max-width: 768px) {
       .footer__contacts .btn {
         display: none; } }
@@ -1829,5 +1837,14 @@ input[type="checkbox"]:checked ~ .checkmark {
     .footer__soc {
       margin-top: 7rem;
       margin-left: 0; } }
+  .footer__soc svg path {
+    fill: #ffffff; }
+  .footer__soc svg path, .footer__soc svg circle {
+    stroke: #ffffff;
+    transition: fill .15s linear, stroke .15s linear; }
   .footer__soc a {
     margin-left: .5rem; }
+    .footer__soc a:hover svg path, .footer__soc a:hover svg circle {
+      stroke: #FC420A; }
+    .footer__soc a:hover svg path {
+      fill: #FC420A; }
