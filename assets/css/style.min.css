@@ -707,6 +707,8 @@ h3 {
   @media screen and (max-width: 768px) {
     .calculate-main {
       padding: 7rem 0 11rem; } }
+  .calculate-main .btn:hover {
+    border: 1px #FC420A solid; }
 
 .calculate__wrapper {
   max-width: 660px; }
@@ -818,6 +820,30 @@ h3 {
   min-height: 88.6rem;
   background: linear-gradient(90deg, rgba(147, 147, 147, 0.1) 50%, #fc420a 50%);
   position: relative; }
+  .feedback-main--contact {
+    padding-top: 24rem; }
+    .feedback-main--contact .feedback__right {
+      order: 1;
+      padding-left: 0 !important;
+      padding-right: 10rem !important;
+      color: #000000; }
+    .feedback-main--contact .feedback__left {
+      order: 2;
+      padding-right: 0 !important;
+      padding-left: 13.5rem !important;
+      color: #ffffff; }
+      .feedback-main--contact .feedback__left * {
+        color: #ffffff;
+        border-color: #ffffff; }
+        .feedback-main--contact .feedback__left * input[type="checkbox"]:checked ~ .checkmark {
+          background-color: #ffffff; }
+        .feedback-main--contact .feedback__left * .btn {
+          background-color: #000000; }
+        .feedback-main--contact .feedback__left * input:focus {
+          border-bottom-color: #000000 !important; }
+        .feedback-main--contact .feedback__left * input::placeholder {
+          font-family: "TT Commons";
+          color: inherit; }
   @media screen and (max-width: 768px) {
     .feedback-main {
       padding: 7rem 0;
@@ -1585,18 +1611,20 @@ h3 {
   @media screen and (max-width: 768px) {
     .form .label-box {
       display: none; } }
-  @media screen and (max-width: 991px) {
-    .calculate-service .form .label-box--mob {
-      display: flex; }
-      .calculate-service .form .label-box--mob label {
-        width: 100%;
-        margin-bottom: 2rem; } }
-  @media screen and (max-width: 768px) {
-    .form .label-box--mob {
-      display: flex; }
-      .form .label-box--mob label {
-        width: 100%;
-        margin-bottom: 2rem; } }
+  .form .label-box--mob {
+    display: none; }
+    @media screen and (max-width: 991px) {
+      .calculate-service .form .label-box--mob {
+        display: flex; }
+        .calculate-service .form .label-box--mob label {
+          width: 100%;
+          margin-bottom: 2rem; } }
+    @media screen and (max-width: 768px) {
+      .form .label-box--mob {
+        display: flex; }
+        .form .label-box--mob label {
+          width: 100%;
+          margin-bottom: 2rem; } }
 
 .form .type-work-box {
   margin-top: -2rem; }
@@ -1657,6 +1685,9 @@ h3 {
   font-size: 1.8rem;
   color: #000000;
   transition: border-bottom-color .15s ease; }
+  .form__control::placeholder {
+    font-family: "TT Commons";
+    color: inherit !important; }
   @media screen and (max-width: 768px) {
     .form__control {
       font-size: 1.4rem;
@@ -1767,6 +1798,8 @@ input[type="checkbox"]:checked ~ .checkmark {
       margin-left: 0; } }
   .footer__contacts .btn {
     margin-top: 5rem; }
+    .footer__contacts .btn:hover {
+      border: 1px solid #FC420A; }
     @media screen and (max-width: 768px) {
       .footer__contacts .btn {
         display: none; } }

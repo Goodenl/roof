@@ -545,6 +545,18 @@ h3 {
     }
 }
 
+.sidebar-show .header--black {
+    color: #ffffff !important;
+}
+
+.sidebar-show .header--black p {
+    color: #ffffff !important;
+}
+
+.sidebar-show .header--black rect {
+    fill: #ffffff !important;
+}
+
 .sidebar-show .header {
     color: #000000;
 }
@@ -1362,6 +1374,12 @@ h3 {
     position: relative;
 }
 
+@media screen and (max-width: 1024px) {
+    .calculate-service {
+        background-size: 50% 100%;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .calculate-service {
         padding: 7rem 0;
@@ -1423,6 +1441,12 @@ h3 {
 .calculate-service__wrapper .form {
     width: 50%;
     padding-left: 12rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .calculate-service__wrapper .form {
+        padding-left: 6rem;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -1488,9 +1512,20 @@ h3 {
     color: #000000;
 }
 
+@media screen and (max-width: 1024px) {
+    .about-roof-service__left {
+        padding-right: 1rem;
+    }
+
+    .about-roof-service__left h2 {
+        font-size: 4rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .about-roof-service__left {
         width: 100%;
+        margin-right: 0;
     }
 }
 
@@ -1563,7 +1598,7 @@ h3 {
 @media screen and (max-width: 991px) {
     .cards-blogs h2 {
         font-size: 4rem;
-        text-transform: capitalize;
+        text-transform: inherit;
     }
 }
 
@@ -1571,7 +1606,7 @@ h3 {
     .cards-blogs h2 {
         font-size: 3rem;
         margin-bottom: 4rem;
-        text-transform: capitalize;
+        text-transform: inherit;
     }
 }
 
@@ -1643,7 +1678,7 @@ h3 {
 @media screen and (max-width: 991px) {
     .content-call-services h2 {
         font-size: 4rem;
-        text-transform: capitalize;
+        text-transform: inherit;
     }
 }
 
@@ -1651,7 +1686,7 @@ h3 {
     .content-call-services h2 {
         font-size: 3rem;
         margin-bottom: 3rem;
-        text-transform: capitalize;
+        text-transform: inherit;
     }
 }
 
@@ -1671,6 +1706,7 @@ h3 {
     .content-call-services .label-box {
         -ms-flex-direction: column;
         flex-direction: column;
+        margin-bottom: 4rem;
         -ms-flex-align: start;
         align-items: flex-start;
     }
@@ -1903,8 +1939,12 @@ h3 {
 
 @media screen and (max-width: 991px) {
     .content-call-services__call-btn {
-        display: -ms-flexbox;
-        display: flex;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
         position: fixed !important;
         bottom: 0;
         z-index: 3;
@@ -2359,6 +2399,10 @@ h3 {
     .form .label-box {
         display: none;
     }
+}
+
+.form .label-box--mob {
+    display: none;
 }
 
 @media screen and (max-width: 991px) {
