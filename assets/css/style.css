@@ -1874,6 +1874,13 @@ h3 {
     margin-left: auto;
 }
 
+.content-call-services .download-price-list a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
 .content-call-services .download-price-list__img {
     width: 5.1rem;
     height: 5.1rem;
