@@ -1240,8 +1240,12 @@ h3 {
 }
 
 .feedback-main--contact .feedback__left * .btn {
-    background-color: #000000;
+    background-color: #ffffff;
     bottom: 0;
+}
+
+.feedback-main--contact .feedback__left * .btn * {
+    color: #000000;
 }
 
 .feedback-main--contact .feedback__left * input:focus {
