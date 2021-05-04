@@ -1108,7 +1108,6 @@ h3 {
         height: auto;
         padding: 3rem;
         margin-right: 1rem;
-        padding-bottom: 3rem;
     }
 }
 
@@ -1208,6 +1207,10 @@ h3 {
     color: #000000;
 }
 
+.feedback-main--contact .feedback__right .feedbacl__soc {
+    bottom: 0 !important;
+}
+
 .feedback-main--contact .feedback__left {
     -ms-flex-order: 2;
     order: 2;
@@ -1218,8 +1221,7 @@ h3 {
 
 @media screen and (max-width: 768px) {
     .feedback-main--contact .feedback__left {
-        padding-top: 4rem;
-        padding-left: 0 !important;
+        padding: 12rem 0 !important;
     }
 }
 
@@ -1234,6 +1236,7 @@ h3 {
 
 .feedback-main--contact .feedback__left * .btn {
     background-color: #000000;
+    bottom: 0;
 }
 
 .feedback-main--contact .feedback__left * input:focus {
