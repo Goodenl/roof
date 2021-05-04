@@ -1096,6 +1096,7 @@ h3 {
     margin-right: 3rem;
     position: relative;
     border: 1px solid #000000;
+    transition: .15s linear;
 }
 
 .blog-main__item.hide {
@@ -1110,7 +1111,7 @@ h3 {
     }
 }
 
-.blog-main__item .detail {
+.blog-main__item .details {
     display: none;
 }
 
@@ -1119,7 +1120,7 @@ h3 {
     color: #ffffff;
 }
 
-.blog-main__item:hover .detail {
+.blog-main__item:hover .details {
     display: block;
 }
 
