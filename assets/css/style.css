@@ -1110,9 +1110,17 @@ h3 {
     }
 }
 
-.blog-main__item--black {
+.blog-main__item .detail {
+    display: none;
+}
+
+.blog-main__item:hover {
     background-color: #000000;
     color: #ffffff;
+}
+
+.blog-main__item:hover .detail {
+    display: block;
 }
 
 .blog-main__item .blog-main__items-bottom {
