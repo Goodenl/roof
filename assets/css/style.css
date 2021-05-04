@@ -599,6 +599,7 @@ h3 {
 
 .header__contacts .header__contacts-order {
     color: #FC420A;
+    cursor: pointer;
 }
 
 .logo {
@@ -1093,6 +1094,7 @@ h3 {
     max-width: 57rem;
     padding: 5rem;
     margin-right: 3rem;
+    position: relative;
     border: 1px solid #000000;
 }
 
@@ -1119,6 +1121,8 @@ h3 {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 8rem;
+    position: relative;
+    z-index: 3;
 }
 
 @media screen and (max-width: 768px) {
@@ -1150,6 +1154,17 @@ h3 {
 }
 
 .blog-main__item a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.blog-main__item .details {
+    position: relative;
+    min-width: 0;
     font-size: 1.4rem;
     line-height: 2rem;
     color: #FC420A;
@@ -1158,7 +1173,7 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-    .blog-main__item a {
+    .blog-main__item .details {
         line-height: 1;
         font-size: 1.2rem;
     }
