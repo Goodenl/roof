@@ -1191,6 +1191,13 @@ h3 {
     color: #ffffff;
 }
 
+@media screen and (max-width: 768px) {
+    .feedback-main--contact .feedback__left {
+        padding-top: 4rem;
+        padding-left: 0 !important;
+    }
+}
+
 .feedback-main--contact .feedback__left * {
     color: #ffffff;
     border-color: #ffffff;
