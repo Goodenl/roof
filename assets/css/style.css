@@ -1108,6 +1108,7 @@ h3 {
         height: auto;
         padding: 3rem;
         margin-right: 1rem;
+        padding-bottom: 3rem;
     }
 }
 
@@ -1136,7 +1137,7 @@ h3 {
 
 @media screen and (max-width: 768px) {
     .blog-main__item .blog-main__items-bottom {
-        margin-top: 6.3rem;
+        margin-top: 11rem;
     }
 }
 
