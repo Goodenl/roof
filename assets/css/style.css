@@ -718,6 +718,11 @@ h3 {
         padding: 11.5rem 0 14rem;
     }
 
+    .preview-main--small {
+        height: 70vh;
+        min-height: 0;
+    }
+
     .preview-main .btn {
         z-index: 2;
         transition: background-color .2s linear;
@@ -1136,7 +1141,7 @@ h3 {
 
 @media screen and (max-width: 768px) {
     .blog-main__item .blog-main__items-bottom {
-        margin-top: 11rem;
+        margin-top: 6.3rem;
     }
 }
 
@@ -1990,7 +1995,6 @@ h3 {
         max-width: 100%;
         padding: 3rem;
         padding-right: 5.6rem;
-        padding-bottom: 12rem;
     }
 }
 
@@ -2025,7 +2029,7 @@ h3 {
         flex-direction: column;
         -ms-flex-align: start;
         align-items: flex-start;
-        margin-top: 3rem;
+        margin-top: 11rem;
     }
 }
 
