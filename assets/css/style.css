@@ -2060,7 +2060,7 @@ h3 {
 }
 
 .content-call-services__list .blog-main__item:hover .details {
-    color: #000000;
+    color: #FC420A;
 }
 
 .content-call-services__call-btn {
@@ -2789,7 +2789,7 @@ input[type="checkbox"]:checked ~ .checkmark {
 .footer__nav {
   width: 50%; }
   @media screen and (max-width: 768px) {
-    .footer__nav .footer__list {
+    .footer__nav {
       display: none; } }
 
 .footer__list {
