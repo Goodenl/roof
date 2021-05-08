@@ -1169,6 +1169,7 @@ h3 {
 .blog-main__item p, .blog-main__item time {
     font-weight: 400;
     line-height: 1;
+    max-width: 44rem;
 }
 
 @media screen and (max-width: 768px) {
