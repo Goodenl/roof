@@ -1205,11 +1205,27 @@ h3 {
 }
 
 .blog-main__slider {
-    height: 26rem;
+    height: 35.4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .blog-main__slider {
+        height: 26rem;
+    }
+
+    .blog-main__slider .blog-main__item h3 {
+        line-height: 2rem;
+    }
 }
 
 .blog-main__slider .blog-main__items-bottom {
-    margin-top: auto;
+    position: absolute;
+    bottom: 3rem;
+    width: 83%;
+}
+
+.blog-main__slider .blog-main__item {
+    height: 100%;
 }
 
 .feedback-main {
