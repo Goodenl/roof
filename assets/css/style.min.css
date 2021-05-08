@@ -847,6 +847,20 @@ h3 {
         line-height: 1;
         font-size: 1.2rem; } }
 
+.blog-main__slider {
+  height: 35.4rem; }
+  @media screen and (max-width: 768px) {
+    .blog-main__slider {
+      height: 26rem; }
+      .blog-main__slider .blog-main__item h3 {
+        line-height: 2rem; }
+      .blog-main__slider .blog-main__items-bottom {
+        position: absolute;
+        bottom: 3rem;
+        width: 83%; } }
+  .blog-main__slider .blog-main__item {
+    height: 100%; }
+
 .feedback-main {
   padding: 12rem 0;
   min-height: 88.6rem;

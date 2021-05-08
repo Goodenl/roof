@@ -1204,6 +1204,14 @@ h3 {
     }
 }
 
+.blog-main__slider {
+    height: 26rem;
+}
+
+.blog-main__slider .blog-main__items-bottom {
+    margin-top: auto;
+}
+
 .feedback-main {
     padding: 12rem 0;
     min-height: 88.6rem;
@@ -2468,12 +2476,14 @@ h3 {
 @media screen and (max-width: 768px) {
     .container {
         max-width: 460px;
+        padding: 0 2rem;
     }
 }
 
 @media only screen and (max-width: 375px) {
     .container {
         max-width: 315px;
+        padding: 0;
     }
 }
 
