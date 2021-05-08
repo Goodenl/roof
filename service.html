@@ -57,7 +57,7 @@
 		 						Выполняем все виды кровельных работ
 		 					</h1>
 		 					<p class="preview-main__text">
-		 						Монтаж и ремонт с гарантией до 5 лет, укладываясь в срок за цены ниже рынка
+		 						С гарантией до 5 лет по ценам ниже рыночных
 		 					</p>
 		 	
 		 					<a href="#calculate-service__wrapper"><button class="btn">СДЕЛАТЬ РАСЧЕТ</button></a>
@@ -113,7 +113,7 @@
 		 					</h2>
 		 				</div>
 		 	
-		 				<form action="#" class="form">
+		 				<form action="mail.php" class="form">
 		 					<div class="type-work-box">
 		 						<h3>Вид робот:</h3>
 		 	
@@ -184,8 +184,8 @@
 		 	
 		 					<h3>Контактная информация:</h3>
 		 	
-		 					<input class="form__control form__control--service" type="text" placeholder="Введите ваше имя">
-		 					<input class="form__control" type="tel" data-tel-input maxlength="18" placeholder="+7-___-___--">
+		 					<input class="form__control form__control--service" type="text" name="name" placeholder="Введите ваше имя">
+		 					<input class="form__control" type="tel" name="telephone" data-tel-input maxlength="18" placeholder="+7-___-___--">
 		 	
 		 					<label class="checkbox-label">
 		 						<input type="checkbox">
@@ -229,15 +229,15 @@
 		 				<div class="feedback__left">
 		 					<h2>Обратная связь</h2>
 		 	
-		 					<form class="form" action="#">
-		 						<input class="form__control" type="text" placeholder="Введите ваше имя">
-		 						<input class="form__control" type="tel" data-tel-input maxlength="18" placeholder="+7-___-___--">
+		 					<form class="form" action="mail.php" method="POST">
+		 						<input class="form__control" type="text" name="name" placeholder="Введите ваше имя">
+		 						<input class="form__control" type="tel" name="telephone" data-tel-input maxlength="18" placeholder="+7-___-___--">
 		 	
 		 						<p class="feedback__subtext">Расскажите о вашей задече или услуге, которая вас интересует</p>
-		 						<textarea class="form__control form__control--textarea"></textarea>
+		 						<textarea class="form__control form__control--textarea" name="text"></textarea>
 		 	
 		 						<label class="checkbox-label">
-		 							<input type="checkbox">
+		 							<input type="checkbox" name="agree">
 		 							<span class="checkmark checkmark--checkbox"></span>
 		 							<p>Я согласен/на с <a href="#"><u>политикой конфиденциальности</u></a></p>
 		 						</label>
@@ -398,12 +398,12 @@
   		<div class="container">
   			<h2>Заказать звонок</h2>
   
-  			<form class="form" action="#">
-  				<input class="form__control" type="text" placeholder="Введите ваше имя">
-  				<input class="form__control" type="tel" data-tel-input maxlength="18" placeholder="+7-___-___--">
+  			<form class="form" action="mail.php" method="POST">
+  				<input class="form__control" type="text" name="name" placeholder="Введите ваше имя">
+  				<input class="form__control" type="tel" name="telephone" name="telephone" data-tel-input maxlength="18" placeholder="+7-___-___--">
   
   				<p class="feedback__subtext">Расскажите о вашей задече или услуге, которая вас интересует</p>
-  				<textarea class="form__control form__control--textarea"></textarea>
+  				<textarea class="form__control form__control--textarea" name="text"></textarea>
   
   				<label class="checkbox-label">
   					<input type="checkbox">
