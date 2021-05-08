@@ -1122,7 +1122,6 @@ h3 {
         height: auto;
         padding: 3rem;
         margin-right: 1rem;
-        line-height: 1;
     }
 }
 
@@ -1169,13 +1168,13 @@ h3 {
 
 .blog-main__item p, .blog-main__item time {
     font-weight: 400;
+    line-height: 1;
 }
 
 @media screen and (max-width: 768px) {
     .blog-main__item p, .blog-main__item time {
         max-width: 22.8rem;
         font-size: 1.4rem;
-        line-height: 1;
     }
 }
 
