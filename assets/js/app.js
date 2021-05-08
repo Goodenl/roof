@@ -1,1 +1,166 @@
-!function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=0)}([function(e,t,n){n(1),n(2),n(3),n(4),n(5),e.exports=n(6)},function(e,t){var n=document.querySelector(".complete-work__slider"),r=document.querySelector(".blog-main__slider");if(n)tns({container:".complete-work__slider",items:2,loop:!1,edgePadding:50,controlsContainer:".complete-work__controls",lazyload:!0,speed:400,nav:!1});if(r)tns({container:".blog-main__slider",items:2,loop:!1,controlsContainer:".blog-main__controls",speed:400,controls:!0,nav:!1})},function(e,t){var n=document.getElementById("nextPageBtn"),r=document.querySelector(".calculate-main");n&&n.addEventListener("click",(function(){r.classList.add("next-page")}))},function(e,t){function n(e,t){var n="undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(!n){if(Array.isArray(e)||(n=function(e,t){if(!e)return;if("string"==typeof e)return r(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);"Object"===n&&e.constructor&&(n=e.constructor.name);if("Map"===n||"Set"===n)return Array.from(e);if("Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return r(e,t)}(e))||t&&e&&"number"==typeof e.length){n&&(e=n);var o=0,a=function(){};return{s:a,n:function(){return o>=e.length?{done:!0}:{done:!1,value:e[o++]}},e:function(e){throw e},f:a}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var i,l=!0,u=!1;return{s:function(){n=n.call(e)},n:function(){var e=n.next();return l=e.done,e},e:function(e){u=!0,i=e},f:function(){try{l||null==n.return||n.return()}finally{if(u)throw i}}}}function r(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}var o=document.body,a=document.querySelectorAll("[data-modal]"),i=document.querySelectorAll(".modal__close"),l=document.querySelectorAll(".modal"),u=document.querySelector(".thanks__box"),c=document.querySelectorAll("#thanksBtn");if(l&&(a.forEach((function(e){e.addEventListener("click",(function(e){var t=e.currentTarget.getAttribute("data-modal"),n=document.getElementById(t),r=n.querySelector(".modal__content");r.addEventListener("click",(function(e){e.stopPropagation()})),o.classList.add("no-scroll"),n.classList.add("show"),setTimeout((function(){r.style.transform="none",r.style.opacity="1"}),1)}))})),i.forEach((function(e){e.addEventListener("click",(function(e){m(e.currentTarget.closest(".modal"))}))})),l.forEach((function(e){e.addEventListener("click",(function(e){m(e.currentTarget)}))})),c)){var s,f=n(c);try{for(f.s();!(s=f.n()).done;)thanksBtn=s.value,thanksBtn.addEventListener("click",(function(){u.classList.add("show"),u.previousElementSibling.style.display="none"}))}catch(e){f.e(e)}finally{f.f()}}if(c){var d,y=n(c);try{for(y.s();!(d=y.n()).done;)thanksBtn=d.value,thanksBtn.addEventListener("click",(function(e){if(!(e.currentTarget.querySelector("input[name='agree']").checked&&e.currentTarget.form.querySelector("input[type='tel']").value.length>=16))return e.preventDefault(),!1;var t=l[0].querySelector(".modal__content");u.classList.add("show"),o.classList.add("no-scroll"),l[0].classList.add("show"),setTimeout((function(){t.style.transform="none",t.style.opacity="1"}),1),u.previousElementSibling.style.display="none"}))}catch(e){y.e(e)}finally{y.f()}}function m(e){e.querySelector(".modal__content").removeAttribute("style"),setTimeout((function(){o.classList.remove("no-scroll"),e.classList.remove("show"),u.classList.remove("show"),u.previousElementSibling.removeAttribute("style")}),200)}},function(e,t){function n(e,t){var n="undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(!n){if(Array.isArray(e)||(n=function(e,t){if(!e)return;if("string"==typeof e)return r(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);"Object"===n&&e.constructor&&(n=e.constructor.name);if("Map"===n||"Set"===n)return Array.from(e);if("Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return r(e,t)}(e))||t&&e&&"number"==typeof e.length){n&&(e=n);var o=0,a=function(){};return{s:a,n:function(){return o>=e.length?{done:!0}:{done:!1,value:e[o++]}},e:function(e){throw e},f:a}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var i,l=!0,u=!1;return{s:function(){n=n.call(e)},n:function(){var e=n.next();return l=e.done,e},e:function(e){u=!0,i=e},f:function(){try{l||null==n.return||n.return()}finally{if(u)throw i}}}}function r(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}document.addEventListener("DOMContentLoaded",(function(){var e,t=document.querySelectorAll("data-tel-input"),r=function(e){return e.value.replace(/\D/g,"")},o=function(e){var t=e.target,n=r(t),o=e.clipboardData||window.clipboardData;if(o){var a=o.getData("Text");if(/\D/g.test(a))return void(t.value=n)}},a=function(e){var t=e.target,n=r(t),o=t.selectionStart,a="";if(!n)return t.value="";if(t.value.length==o){if(["7","8","9"].indexOf(n[0])>-1){"9"==n[0]&&(n="7"+n);var i="8"==n[0]?"8":"+7";a=t.value=i,n.length>1&&(a+="-"+n.substring(1,4)),n.length>=5&&(a+="-"+n.substring(4,7)),n.length>=8&&(a+="-"+n.substring(7,9)),n.length>=10&&(a+="-"+n.substring(9,11))}else a="+"+n.substring(0,16);t.value=a}else e.data&&/\D/g.test(e.data)&&(t.value=n)},i=function(e){var t=e.target.value.replace(/\D/g,"");8==e.keyCode&&1==t.length&&(e.target.value="")},l=n(t);try{for(l.s();!(e=l.n()).done;){var u=e.value;u.addEventListener("keydown",i),u.addEventListener("input",a,!1),u.addEventListener("paste",o,!1)}}catch(e){l.e(e)}finally{l.f()}}));var o,a=n(document.querySelectorAll("form button.btn#thanksBtn"));try{var i=function(){var e=o.value;e.form.addEventListener("submit",(function(t){t.currentTarget.querySelector("input[name='agree']").checked&&e.form.querySelector("input[type='tel']").value.length>=16||t.preventDefault()}))};for(a.s();!(o=a.n()).done;)i()}catch(e){a.e(e)}finally{a.f()}},function(e,t){function n(e,t){var n="undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(!n){if(Array.isArray(e)||(n=function(e,t){if(!e)return;if("string"==typeof e)return r(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);"Object"===n&&e.constructor&&(n=e.constructor.name);if("Map"===n||"Set"===n)return Array.from(e);if("Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return r(e,t)}(e))||t&&e&&"number"==typeof e.length){n&&(e=n);var o=0,a=function(){};return{s:a,n:function(){return o>=e.length?{done:!0}:{done:!1,value:e[o++]}},e:function(e){throw e},f:a}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var i,l=!0,u=!1;return{s:function(){n=n.call(e)},n:function(){var e=n.next();return l=e.done,e},e:function(e){u=!0,i=e},f:function(){try{l||null==n.return||n.return()}finally{if(u)throw i}}}}function r(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}var o=document.querySelectorAll(".blog-main__item"),a=document.querySelectorAll(".checkmark[data-type]");if(a[0]){var i,l=n(a);try{for(l.s();!(i=l.n()).done;){i.value.addEventListener("click",(function(e){var t,r=n(o);try{for(r.s();!(t=r.n()).done;){var a=t.value;a.classList.remove("hide"),a.dataset.type!=e.target.dataset.type&&a.classList.add("hide")}}catch(e){r.e(e)}finally{r.f()}}))}}catch(e){l.e(e)}finally{l.f()}}},function(e,t){function n(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}var r=document.body,o=document.querySelector(".menu__btn"),a=document.querySelectorAll(".sidebar-main__item a");o.addEventListener("click",(function(){r.classList.toggle("sidebar-show")}));var i,l=function(e,t){var r="undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(!r){if(Array.isArray(e)||(r=function(e,t){if(!e)return;if("string"==typeof e)return n(e,t);var r=Object.prototype.toString.call(e).slice(8,-1);"Object"===r&&e.constructor&&(r=e.constructor.name);if("Map"===r||"Set"===r)return Array.from(e);if("Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r))return n(e,t)}(e))||t&&e&&"number"==typeof e.length){r&&(e=r);var o=0,a=function(){};return{s:a,n:function(){return o>=e.length?{done:!0}:{done:!1,value:e[o++]}},e:function(e){throw e},f:a}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var i,l=!0,u=!1;return{s:function(){r=r.call(e)},n:function(){var e=r.next();return l=e.done,e},e:function(e){u=!0,i=e},f:function(){try{l||null==r.return||r.return()}finally{if(u)throw i}}}}(a);try{for(l.s();!(i=l.n()).done;)sidebarLink=i.value,sidebarLink.addEventListener("click",(function(){r.classList.remove("sidebar-show")}))}catch(e){l.e(e)}finally{l.f()}window.addEventListener("wheel",(function(e){window.pageYOffset>=80?r.classList.add("scroll-menu"):r.classList.remove("scroll-menu")})),window.addEventListener("touchmove",(function(e){window.pageYOffset>=80?r.classList.add("scroll-menu"):r.classList.remove("scroll-menu")}))}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/assets/js/app.js":
+/*!******************************!*\
+  !*** ./src/assets/js/app.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("const workSlider = document.querySelector(\".complete-work__slider\");\r\nconst blogSlider = document.querySelector(\".blog-main__slider\");\r\n\r\nif (workSlider) {\r\n  let sliderWork = tns({\r\n    \"container\": \".complete-work__slider\",\r\n    \"items\": 2,\r\n    \"loop\": false,\r\n    \"edgePadding\": 50,\r\n    \"preventScrollOnTouch\": \"auto\",\r\n    \"controlsContainer\": \".complete-work__controls\",\r\n    \"lazyload\": true,\r\n    \"speed\": 400,\r\n    \"nav\": false\r\n  });\r\n}\r\n\r\nif (blogSlider) {\r\n  let sliderBlog = tns({\r\n    \"container\": \".blog-main__slider\",\r\n    \"items\": 2,\r\n    \"loop\": false,\r\n    \"preventScrollOnTouch\": \"auto\",\r\n    \"controlsContainer\": \".blog-main__controls\",\r\n    \"speed\": 400,\r\n    \"controls\": true,\r\n    \"nav\": false\r\n  });\r\n}\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/calculate-steps.js":
+/*!******************************************!*\
+  !*** ./src/assets/js/calculate-steps.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("const nextPageBtn = document.getElementById(\"nextPageBtn\"),\n\t\t\tcalculateMain = document.querySelector(\".calculate-main\");\n\nif (nextPageBtn) {\n\tnextPageBtn.addEventListener(\"click\", ()=> {\n\t\tcalculateMain.classList.add(\"next-page\")\n\t})\n}\n\n//# sourceURL=webpack:///./src/assets/js/calculate-steps.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/modal.js":
+/*!********************************!*\
+  !*** ./src/assets/js/modal.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("const body = document.body;\nconst modalBtn = document.querySelectorAll('[data-modal]');\nconst modalClose = document.querySelectorAll('.modal__close');\nconst modal = document.querySelectorAll('.modal');\nconst thanksBox = document.querySelector('.thanks__box');\nconst thanksBtns = document.querySelectorAll('#thanksBtn');\n\nif (modal) {\n\tmodalBtn.forEach(item =>{\n\t\titem.addEventListener('click', event => {\n\t\t\tlet $this = event.currentTarget;\n\t\t\tlet modalId = $this.getAttribute('data-modal');\n\t\t\tlet modal = document.getElementById(modalId);\n\t\t\tlet modalContent = modal.querySelector('.modal__content');\n\n\t\t\tmodalContent.addEventListener('click', event => {\n\t\t\t\tevent.stopPropagation();\n\t\t\t});\n\n\n\t\t\tbody.classList.add('no-scroll');\n\t\t\tmodal.classList.add('show');\n\n\t\t\t\n\t\t\tsetTimeout( ()=> {\n\t\t\t\tmodalContent.style.transform = 'none';\n\t\t\t\tmodalContent.style.opacity = '1';\n\t\t\t}, 1);\n\t\t});\n\t});\n\n\tmodalClose.forEach(item =>{\n\t\titem.addEventListener('click', event => {\n\t\t\tlet currentModal = event.currentTarget.closest('.modal');\n\n\t\t\tcloseModal(currentModal);\n\t\t\t});\n\t});\n\n\n\tmodal.forEach(item =>{\n\t\titem.addEventListener('click', event => {\n\t\t\tlet currentModal = event.currentTarget;\n\n\t\t\tcloseModal(currentModal);\n\t\t\t});\n\t});\n\n\tif (thanksBtns) {\n\t\tfor(thanksBtn of thanksBtns) {\n\t\t\tthanksBtn.addEventListener('click', () => {\n\t\t\t\tthanksBox.classList.add(\"show\");\n\n\t\t\t\tthanksBox.previousElementSibling.style.display = \"none\";\n\t\t\t});\n\t\t}\n\t}\n}\n\nif (thanksBtns) {\n\tfor(thanksBtn of thanksBtns) {\n\t\tthanksBtn.addEventListener('click', (event) => {\n\t\t\tif (!(event.currentTarget.querySelector(\"input[name='agree']\").checked) || !(event.currentTarget.form.querySelector(\"input[type='tel']\").value.length >= 16)) {\n          event.preventDefault();\n          return false;\n      }\n\n\t\t\tlet modalContent = modal[0].querySelector('.modal__content');\n\t\t\tthanksBox.classList.add(\"show\");\n\n\t\t\tbody.classList.add('no-scroll');\n\t\t\tmodal[0].classList.add('show');\n\n\t\t\t\n\t\t\tsetTimeout( ()=> {\n\t\t\t\tmodalContent.style.transform = 'none';\n\t\t\t\tmodalContent.style.opacity = '1';\n\t\t\t}, 1);\n\n\t\t\tthanksBox.previousElementSibling.style.display = \"none\";\n\t\t});\n\t}\n}\n\nfunction closeModal(currentModal) {\n\tlet modalContent = currentModal.querySelector(\".modal__content\");\n\tmodalContent.removeAttribute('style');\n\t\n\tsetTimeout(() => {\n\t\tbody.classList.remove('no-scroll');\n\t\tcurrentModal.classList.remove('show');\n\t\tthanksBox.classList.remove(\"show\");\n\t\tthanksBox.previousElementSibling.removeAttribute('style');\n\t}, 200);\n}\n\n//# sourceURL=webpack:///./src/assets/js/modal.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/phone-mask.js":
+/*!*************************************!*\
+  !*** ./src/assets/js/phone-mask.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("document.addEventListener(\"DOMContentLoaded\", function () {\n    let phoneInputs = document.querySelectorAll('input[data-tel-input]');\n\n    let getInputNumbersValue = function (input) {\n        // Return stripped input value — just numbers\n        return input.value.replace(/\\D/g, '');\n    }\n\n    let onPhonePaste = function (e) {\n        let input = e.target,\n            inputNumbersValue = getInputNumbersValue(input);\n        let pasted = e.clipboardData || window.clipboardData;\n        if (pasted) {\n            let pastedText = pasted.getData('Text');\n            if (/\\D/g.test(pastedText)) {\n                // Attempt to paste non-numeric symbol — remove all non-numeric symbols,\n                // formatting will be in onPhoneInput handler\n                input.value = inputNumbersValue;\n                return;\n            }\n        }\n    }\n\n    let onPhoneInput = function (e) {\n        let input = e.target,\n            inputNumbersValue = getInputNumbersValue(input),\n            selectionStart = input.selectionStart,\n            formattedInputValue = \"\";\n\n        if (!inputNumbersValue) {\n            return input.value = \"\";\n        }\n\n        if (input.value.length != selectionStart) {\n            // Editing in the middle of input, not last symbol\n            if (e.data && /\\D/g.test(e.data)) {\n                // Attempt to input non-numeric symbol\n                input.value = inputNumbersValue;\n            }\n            return;\n        }\n\n        if ([\"7\", \"8\", \"9\"].indexOf(inputNumbersValue[0]) > -1) {\n            if (inputNumbersValue[0] == \"9\") inputNumbersValue = \"7\" + inputNumbersValue;\n            let firstSymbols = (inputNumbersValue[0] == \"8\") ? \"8\" : \"+7\";\n            formattedInputValue = input.value = firstSymbols;\n            if (inputNumbersValue.length > 1) {\n                formattedInputValue += '-' + inputNumbersValue.substring(1, 4);\n            }\n            if (inputNumbersValue.length >= 5) {\n                formattedInputValue += '-' + inputNumbersValue.substring(4, 7);\n            }\n            if (inputNumbersValue.length >= 8) {\n                formattedInputValue += '-' + inputNumbersValue.substring(7, 9);\n            }\n            if (inputNumbersValue.length >= 10) {\n                formattedInputValue += '-' + inputNumbersValue.substring(9, 11);\n            }\n        } else {\n            formattedInputValue = '+' + inputNumbersValue.substring(0, 16);\n        }\n        input.value = formattedInputValue;\n    }\n    let onPhoneKeyDown = function (e) {\n        // Clear input after remove last symbol\n        let inputValue = e.target.value.replace(/\\D/g, '');\n        if (e.keyCode == 8 && inputValue.length == 1) {\n            e.target.value = \"\";\n        }\n    }\n    for (let phoneInput of phoneInputs) {\n        phoneInput.addEventListener('keydown', onPhoneKeyDown);\n        phoneInput.addEventListener('input', onPhoneInput, false);\n        phoneInput.addEventListener('paste', onPhonePaste, false);\n    }\n})\n\nconst formBtns = document.querySelectorAll(\"form button.btn#thanksBtn\");\n\nfor( let formBtn of formBtns) {\n    formBtn.form.addEventListener(\"submit\", (event) => {\n        if (!(event.currentTarget.querySelector(\"input[name='agree']\").checked) || !(formBtn.form.querySelector(\"input[type='tel']\").value.length >= 16)) {\n            event.preventDefault();\n        } \n    })\n}\n\n//# sourceURL=webpack:///./src/assets/js/phone-mask.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/services__filter.js":
+/*!*******************************************!*\
+  !*** ./src/assets/js/services__filter.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("const blogMainItems = document.querySelectorAll(\".blog-main__item\"),\n\t\t\tcheckmarks = document.querySelectorAll(\".checkmark[data-type]\");\n\nif (checkmarks[0]) {\n\tfor (let checkmark of checkmarks) {\n\t\tcheckmark.addEventListener(\"click\", (event)=> {\n\t\t\tfor( let blogMainItem of blogMainItems) {\n\t\t\t\tblogMainItem.classList.remove(\"hide\");\n\n\t\t\t\tif (blogMainItem.dataset.type != event.target.dataset.type) {\n\t\t\t\t\tblogMainItem.classList.add(\"hide\");\n\t\t\t\t}\n\t\t\t}\n\t\t})\n\t}\n}\n\n//# sourceURL=webpack:///./src/assets/js/services__filter.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/sidebar.js":
+/*!**********************************!*\
+  !*** ./src/assets/js/sidebar.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("const body = document.body,\n\t\t\tmenuBtn = document.querySelector(\".menu__btn\"),\n\t\t\tsidebarLinks = document.querySelectorAll(\".sidebar-main__item a\");\n\nmenuBtn.addEventListener(\"click\", () => {\n\tbody.classList.toggle(\"sidebar-show\")\n})\n\nfor( sidebarLink of sidebarLinks ) {\n\tsidebarLink.addEventListener(\"click\", ()=> {\n\t\tbody.classList.remove(\"sidebar-show\");\n\t})\n}\n\nwindow.addEventListener('wheel', function(event) {\n\tif (window.pageYOffset >= 80) {\n\t\tbody.classList.add(\"scroll-menu\");\n\t} else {\n\t\tbody.classList.remove(\"scroll-menu\");\n\t}\n});\n\nwindow.addEventListener('touchmove', function(event) {\n\tif (window.pageYOffset >= 80) {\n\t\tbody.classList.add(\"scroll-menu\");\n\t} else {\n\t\tbody.classList.remove(\"scroll-menu\");\n\t}\n});\n\n//# sourceURL=webpack:///./src/assets/js/sidebar.js?");
+
+/***/ }),
+
+/***/ 0:
+/*!*********************************************************************************************************************************************************************************************!*\
+  !*** multi ./src/assets/js/app.js ./src/assets/js/calculate-steps.js ./src/assets/js/modal.js ./src/assets/js/phone-mask.js ./src/assets/js/services__filter.js ./src/assets/js/sidebar.js ***!
+  \*********************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! /home/gooden/Code/Work/roof/src/assets/js/app.js */\"./src/assets/js/app.js\");\n__webpack_require__(/*! /home/gooden/Code/Work/roof/src/assets/js/calculate-steps.js */\"./src/assets/js/calculate-steps.js\");\n__webpack_require__(/*! /home/gooden/Code/Work/roof/src/assets/js/modal.js */\"./src/assets/js/modal.js\");\n__webpack_require__(/*! /home/gooden/Code/Work/roof/src/assets/js/phone-mask.js */\"./src/assets/js/phone-mask.js\");\n__webpack_require__(/*! /home/gooden/Code/Work/roof/src/assets/js/services__filter.js */\"./src/assets/js/services__filter.js\");\nmodule.exports = __webpack_require__(/*! /home/gooden/Code/Work/roof/src/assets/js/sidebar.js */\"./src/assets/js/sidebar.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/calculate-steps.js_./src/assets/js/modal.js_./src/assets/js/phone-mask.js_./src/assets/js/services__filter.js_./src/assets/js/sidebar.js?");
+
+/***/ })
+
+/******/ });
