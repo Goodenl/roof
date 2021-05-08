@@ -889,12 +889,16 @@ h3 {
 
 .complete-work .tns-item {
     margin-right: 2rem;
+    -ms-touch-action: none;
+    touch-action: none;
 }
 
 .complete-work .tns-item img {
     width: 100%;
     min-height: 42.7rem;
     max-height: 27.5rem;
+    -ms-touch-action: none;
+    touch-action: none;
 }
 
 @media screen and (max-width: 1024px) {
