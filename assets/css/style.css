@@ -1220,8 +1220,14 @@ h3 {
 
 .blog-main__slider .blog-main__items-bottom {
     position: absolute;
-    bottom: 3rem;
+    bottom: 5rem;
     width: 83%;
+}
+
+@media screen and (max-width: 768px) {
+    .blog-main__slider .blog-main__items-bottom {
+        bottom: 3rem;
+    }
 }
 
 .blog-main__slider .blog-main__item {
