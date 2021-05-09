@@ -1847,7 +1847,7 @@ h3 {
     margin-bottom: 3rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 1170px) {
     .cards-blogs .blog-main__item {
         margin-right: 1rem;
         width: 47%;

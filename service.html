@@ -17,14 +17,13 @@
 </head>
 <body>
 
-  <div class="page" id="page">
+  <div class="page page--list" id="page">
   	<!-- Header -->
-  	<header class="header">
+  	<header class="header header--black">
   		<div class="logo">
   			<svg class="logo__img" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
   				<rect y="8.48535" width="12" height="12" transform="rotate(-45 0 8.48535)" fill="white"/>
   			</svg>
-  	
   			<p class="logo__text"><a href="index.html">ГК ИнтерСпецКомплект</a></p>
   		</div>
   	
@@ -46,6 +45,38 @@
   	
   		</div>
   	</header>
+  	
+  	<section class="sidebar-main">
+  		<nav>
+  			<ul class="sidebar-main__list">
+  				<li class="sidebar-main__item">
+  					<a href="#">
+  						<h2>Услуги</h2>
+  					</a>
+  				</li>
+  				<li class="sidebar-main__item">
+  					<a href="#">
+  						<h2>Выполненные работы</h2>
+  					</a>
+  				</li>
+  				<li class="sidebar-main__item">
+  					<a href="#">
+  						<h2>Расчет вашего объекта</h2>
+  					</a>
+  				</li>
+  				<li class="sidebar-main__item">
+  					<a href="#">
+  						<h2>Блог о кровлях</h2>
+  					</a>
+  				</li>
+  				<li class="sidebar-main__item">
+  					<a href="#">
+  						<h2>Контакты</h2>
+  					</a>
+  				</li>
+  			</ul>
+  		</nav>
+  	</section>
 		<!-- Main -->
 		<main>
 		 	
@@ -347,12 +378,12 @@
                 </a>
               </li>
               <li class="sidebar-main__item">
-                <a href="#complete-work">
+                <a href="index.html#complete-work">
                   <h2>Выполненные работы</h2>
                 </a>
               </li>
               <li class="sidebar-main__item">
-                <a href="#calculate__wrapper">
+                <a href="index.html#calculate__wrapper">
                   <h2>Расчет вашего объекта</h2>
                 </a>
               </li>
@@ -460,11 +491,11 @@
   			<img src="assets/images/close.svg" alt="Закрыть">
   		</button>
   		<div class="container">
-  			<h2>Заказать звонок</h2>
+  			<h2>Сделать рассчет</h2>
   
   			<form class="form" action="mail.php" method="POST">
   				<input class="form__control" type="text" name="name" placeholder="Введите ваше имя">
-  				<input class="form__control" type="tel" name="telephone" name="telephone" data-tel-input maxlength="18" placeholder="+7-___-___--">
+  				<input class="form__control" type="tel" name="telephone" data-tel-input maxlength="18" placeholder="+7-___-___--">
   
   				<p class="feedback__subtext">Расскажите о вашей задече или услуге, которая вас интересует</p>
   				<textarea class="form__control form__control--textarea" name="text"></textarea>
@@ -475,7 +506,7 @@
   					<p>Я согласен/на с <a href="#"><u>политикой конфиденциальности</u></a></p>
   				</label>
   
-  				<button class="btn btn--narrow" type="submit" id="thanksBtn">
+  				<button class="btn btn--narrow" id="thanksBtn">
   					<p>Отправить</p>
   				</button>
   			</form>
