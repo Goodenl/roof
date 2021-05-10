@@ -13,6 +13,8 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    
     <title>Монтаж и ремонт композитной кровли</title>
 </head>
 <body>
@@ -155,7 +157,7 @@
 		 					</h2>
 		 				</div>
 		 	
-		 				<form action="mail.php" class="form">
+		 				<form class="form" action="mail.php" method="POST">
 		 					<div class="type-work-box">
 		 						<h3>Вид робот:</h3>
 		 	
@@ -230,12 +232,12 @@
 		 					<input class="form__control" type="tel" name="telephone" data-tel-input maxlength="18" placeholder="+7-___-___--">
 		 	
 		 					<label class="checkbox-label">
-		 						<input type="checkbox">
+		 						<input type="checkbox" name="agree">
 		 						<span class="checkmark checkmark--checkbox"></span>
 		 						<p>Я согласен/на с <a href="#"><u>политикой конфиденциальности</u></a></p>
 		 					</label>
 		 	
-		 					<button class="btn">
+		 					<button class="btn" type="submit" id="thanksBtn">
 		 						<p>ВЫЗВАТЬ СПЕЦИАЛИСТА</p>
 		 					</button>
 		 				</form>
@@ -348,7 +350,7 @@
 		 							<p>Я согласен/на с <a href="#"><u>политикой конфиденциальности</u></a></p>
 		 						</label>
 		 	
-		 						<button class="btn btn--narrow">
+		 						<button class="btn btn--narrow" type="submit" id="thanksBtn">
 		 							<p>Заказать звонок</p>
 		 						</button>
 		 					</form>
@@ -512,7 +514,7 @@
   				<textarea class="form__control form__control--textarea" name="text"></textarea>
   
   				<label class="checkbox-label">
-  					<input type="checkbox">
+  					<input type="checkbox" name="agree">
   					<span class="checkmark checkmark--checkbox"></span>
   					<p>Я согласен/на с <a href="#"><u>политикой конфиденциальности</u></a></p>
   				</label>

@@ -2240,12 +2240,20 @@ h3 {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 50%;
+    padding-bottom: 4rem;
+    position: relative;
 }
 
 @media screen and (max-width: 768px) {
     .post-blog__img {
         width: 100%;
     }
+}
+
+.post-blog__img img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .post-blog__img:nth-child(1) {
@@ -2261,6 +2269,8 @@ h3 {
 
 .post-blog__img-text {
     margin-top: 2rem;
+    position: absolute;
+    bottom: 0;
 }
 
 .post-blog__text {
