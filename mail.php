@@ -1,6 +1,6 @@
 <?php
 
-$to = "krovlysite@yandex.ru"; # сюда записывать нужный емейл получателя
+$to = "krovlysite@yandex.ua"; # сюда записывать нужный емейл получателя
 
 $email = "noreply@mail.com";
 $name = $_POST["name"];
